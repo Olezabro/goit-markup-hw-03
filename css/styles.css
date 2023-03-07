@@ -4,6 +4,15 @@
     --paragraph-color: #434455;
 }
 
+h1, h2, h2, h4, h5, h6, p {
+    margin: 0;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -87,8 +96,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
-    margin-left: 156px;
-
+    margin: 0 76px 0 156px;
 }
 
 .header-logo span {
@@ -96,8 +104,6 @@ body {
 }
 
 .header-item {
-    padding-left: auto;
-    padding-right: 40px;
 }
 .header-link {
     font-weight: 500;
@@ -125,7 +131,11 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--paragraph-color);   
+    color: var(--paragraph-color);
+}
+
+.header-tel {
+    padding-right: 156px;
 }
 
 .header-contacts:hover,
@@ -138,13 +148,15 @@ body {
 
 .main {
     background: #2E2F42;
+    padding: 188px 472px 292px; 
 }
 .main-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--main-color);    
+    color: var(--main-color);
+      
 }
 .main-btn {
     font-family: 'Roboto';
@@ -155,6 +167,12 @@ body {
     cursor: pointer;
     color: #FFFFFF;
     background: #4D5AE5;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 48px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -165,14 +183,28 @@ body {
 /* ----------- skills ----------- */
 
 .skills {
+    padding: 120px 156px;
+}
+
+.skills-content {
+    
 }
 
 .skills-list {
+    display: flex;
+    justify-content: space-around;
 }
 
 .skills-item {
+    max-width: 264px;
 }
-.skills-item-title { 
+
+.skills-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.skills-subtitle { 
+    margin: 0 0 8px;
 }
 .skills-item-text {
  
@@ -182,13 +214,23 @@ body {
 /* ----------- work ----------- */
 
 .work {
+    padding: 0 156px;
 }
 .work-title {
     color: var(--second-color);    
+    margin-bottom: 72px;
 }
 .work-list {
+    display: flex; 
+    gap: 24px;
+    justify-content: center;
 }
 .work-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.work-container {
+
 }
 
 /* ----------- team ----------- */
