@@ -1,10 +1,11 @@
+
 :root {
     --main-color: #fff;
     --second-color: #2E2F42;
     --paragraph-color: #434455;
 }
 
-h1, h2, h2, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -21,8 +22,10 @@ body {
 }
 
 .container{
-    width: 1440;
+    width: 1440px;
     margin: 0 auto;
+    padding: 0;
+    /* outline: 1px solid red; */
 }
 
 .list {
@@ -148,14 +151,20 @@ body {
 
 .main {
     background: #2E2F42;
-    padding: 188px 472px 292px; 
+    
 }
+
+.main-container {
+    padding: 188px 472px 188px;
+}
+
 .main-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--main-color);
+    max-width: 496px;
       
 }
 .main-btn {
@@ -168,11 +177,12 @@ body {
     color: #FFFFFF;
     background: #4D5AE5;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
     margin-top: 48px;
+    border: transparent
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -183,11 +193,11 @@ body {
 /* ----------- skills ----------- */
 
 .skills {
-    padding: 120px 156px;
+    
 }
 
 .skills-content {
-    
+    margin: 120px 156px;
 }
 
 .skills-list {
@@ -199,9 +209,6 @@ body {
     max-width: 264px;
 }
 
-.skills-item:not(:last-child) {
-    margin-right: 24px;
-}
 
 .skills-subtitle { 
     margin: 0 0 8px;
@@ -230,29 +237,49 @@ body {
 }
 
 .work-container {
-
+    padding: 120px 156px;
 }
 
 /* ----------- team ----------- */
 
 .team {
     background: #F4F4FD;
+    
 }
+
+.team-container {
+    padding: 120px;
+}
+
 .team-title {
-    color: var(--second-color); 
+    color: var(--second-color);
+    margin-bottom: 72px; 
 }
+
+.team-content {
+    padding: 32px 16px;
+}
+
 .team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
 }
 .team-item {
-    color: #FFFFFF;
-}
+    width: calc((100% - 72px)) / 4;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    }
 .team-item-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.20;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--second-color);    
+    color: var(--second-color);
+    margin-bottom: 8px;
 }
 .team-item-work {
     font-size: 16px;
@@ -267,6 +294,11 @@ body {
 .footer {
     background: #2E2F42;
 }
+
+.footer-container {
+    padding: 100px 156px;
+}
+
 .footer-logo {
     font-family: 'Raleway';
     font-weight: 800;
@@ -284,6 +316,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
+    max-width: 264px;
+    margin-top: 16px;
 }
 
 /* Portfolio Page Styles */
@@ -291,11 +325,50 @@ body {
 .Portfolio {
 }
 
-.Portfolio-list {
+.portfolio-container {
+    padding: 96px 156px 120px;
 }
+
+.portfolio-content {
+    
+}
+
+.Portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 586px;
+    margin: 0 auto;
+}
+
+.portfolio-images-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+
+.portfolio-content {
+    padding: 32px 16px;
+    
+}
+
+.portfolio-images-item {
+    width: calc((100% - 144) / 9);
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    max-width: 360px;
+}
+
+.portfolio-images-item
 
 .portfolio-link:hover,
 .portfolio-link:focus {
+}
+
+.portfolio-subtitle{
+    margin-bottom: 8px;
 }
 
 .portfolio-item {
@@ -307,14 +380,25 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #4D5AE5;
-    background: #E7E9FC;
     cursor: pointer;
+    margin: 0 auto;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    flex-grow: 0;
+    padding: 12px 24px;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: #FFFFFF;
-    background-color: #404BBF;
+    background: #404BBF;
+    border: 1px solid transparent;
 }
 
 
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+}
