@@ -79,7 +79,7 @@ body {
 
   .header {
     border-bottom: 1px solid #E7E9FC;
-    padding: 24px 156px;
+    padding: 24px 0;
 }
 
 .header-container {
@@ -228,7 +228,7 @@ body {
 /* ----------- work ----------- */
 
 .work {
-    padding-bottom: 116px;
+    padding-bottom: 120px;
 }
 .work-title {
     color: var(--second-color);    
@@ -249,7 +249,7 @@ body {
 
 .team {
     background: #F4F4FD;
-    padding: 124px 0 120px;
+    padding: 120px 0;
 }
 
 .team-container {
@@ -327,7 +327,7 @@ body {
 /* Portfolio Page Styles */
 
 .Portfolio {
-    padding: 96px 156px 120px;
+    padding: 120px 0;
 }
 
 .portfolio-container {
@@ -360,7 +360,7 @@ body {
 }
 
 .portfolio-images-item {
-    width: calc((100% - 48) / 3);
+    width: calc((100% - 48px) / 3);
     background: #FFFFFF;
 }
 
