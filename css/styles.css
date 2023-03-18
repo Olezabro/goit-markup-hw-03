@@ -22,9 +22,9 @@ body {
 }
 
 .container{
-    width: 1440px;
+    width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
-    padding: 0;
     /* outline: 1px solid red; */
 }
 
@@ -78,19 +78,20 @@ body {
   /* ----------- header ----------- */
 
   .header {
-    padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .header-nav {
     display: flex;
-    align-items: center;
+    gap: 76px;
 }
 .header-logo {
     font-family: 'Raleway';
@@ -100,11 +101,18 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
-    margin: 0 76px 0 156px;
 }
 
 .header-logo span {
     color: #4D5AE5;
+}
+
+.header-list {
+}
+
+.header-adress-list {
+    display: flex;
+    gap: 40px
 }
 
 .header-item {
@@ -139,7 +147,6 @@ body {
 }
 
 .header-tel {
-    padding-right: 156px;
 }
 
 .header-contacts:hover,
@@ -152,11 +159,12 @@ body {
 
 .main {
     background: #2E2F42;
-    
+    padding: 188px 0;
 }
 
 .main-container {
-    padding: 188px 472px 188px;
+   
+   
 }
 
 .main-title {
@@ -166,6 +174,7 @@ body {
     text-align: center;
     color: var(--main-color);
     max-width: 496px;
+    margin: 0 auto;
       
 }
 .main-btn {
@@ -183,7 +192,7 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
     margin-top: 48px;
-    border: transparent
+    border: none
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -194,16 +203,13 @@ body {
 /* ----------- skills ----------- */
 
 .skills {
-    
-}
-
-.skills-content {
-    margin: 120px 156px;
+    padding: 120px 0;
 }
 
 .skills-list {
     display: flex;
-    justify-content: space-around;
+    gap: 24px;
+    
 }
 
 .skills-item {
@@ -212,7 +218,7 @@ body {
 
 
 .skills-subtitle { 
-    margin: 0 0 8px;
+    margin-bottom: 8px;
 }
 .skills-item-text {
  
@@ -222,7 +228,7 @@ body {
 /* ----------- work ----------- */
 
 .work {
-    padding: 0 156px;
+    padding-bottom: 120px;
 }
 .work-title {
     color: var(--second-color);    
@@ -231,25 +237,23 @@ body {
 .work-list {
     display: flex; 
     gap: 24px;
-    justify-content: center;
 }
 .work-item {
     width: calc((100% - 48px) / 3);
 }
 
 .work-container {
-    padding: 120px 156px;
 }
 
 /* ----------- team ----------- */
 
 .team {
     background: #F4F4FD;
-    
+    padding: 120px 0;
 }
 
 .team-container {
-    padding: 120px;
+    
 }
 
 .team-title {
@@ -264,11 +268,9 @@ body {
 .team-list {
     display: flex;
     gap: 24px;
-    justify-content: center;
-    width: 100%;
 }
 .team-item {
-    width: calc((100% - 72px)) / 4;
+    width: calc((100% - 72px) / 4);
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -294,10 +296,11 @@ body {
 
 .footer {
     background: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-container {
-    padding: 100px 156px;
+    
 }
 
 .footer-logo {
@@ -324,10 +327,11 @@ body {
 /* Portfolio Page Styles */
 
 .Portfolio {
+    padding: 120px 0;
 }
 
 .portfolio-container {
-    padding: 96px 156px 120px;
+    
 }
 
 .portfolio-content {
@@ -336,9 +340,8 @@ body {
 
 .Portfolio-list {
     display: flex;
-    justify-content: space-between;
-    max-width: 586px;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 24px;
 }
 
 .portfolio-images-list {
@@ -352,14 +355,13 @@ body {
 
 .portfolio-content {
     padding: 32px 16px;
-    
+    border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .portfolio-images-item {
-    width: calc((100% - 144) / 9);
+    width: calc((100% - 48px) / 3);
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-    max-width: 360px;
 }
 
 .portfolio-images-item
@@ -382,11 +384,9 @@ body {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     cursor: pointer;
-    margin: 0 auto;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    flex-grow: 0;
     padding: 12px 24px;
 }
 
@@ -394,7 +394,7 @@ body {
 .portfolio-btn:focus {
     color: #FFFFFF;
     background: #404BBF;
-    border: 1px solid transparent;
+    border: 1px solid;
 }
 
 
@@ -402,4 +402,5 @@ body {
 .portfolio-btn:focus {
     color: #FFFFFF;
     background: #404BBF;
+    border-color: transparent;
 }
